@@ -37,6 +37,8 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  config.middleware.use('SpoofIp', '192.195.82.33')
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
